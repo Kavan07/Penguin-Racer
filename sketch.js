@@ -108,6 +108,7 @@ function draw() {
   bear.debug = false;
   penguin.debug = false;
   ground.debug = false;
+  obstacleGroup.debug = false;
   penguin.setCollider("circle", 10, -35);
 
 // to start the game  
