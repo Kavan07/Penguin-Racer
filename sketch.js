@@ -306,13 +306,13 @@ function reset() {
 
 // function to spawn the obstacles at random position :~
 function spawnObstacles() {
-  if((frameCount % 500 === 0) && (state === "play")) {
+  if((frameCount % 350 === 0) && (state === "play")) {
      obstacle = createSprite(random(1050, 3200), 355, 30, 30);
      obstacle.addImage(obstacleIMG);
      obstacle.scale = 0.2;
      obstacle.velocityX = obstacleSpeed;
      obstacleGroup.add(obstacle);
-     obstacle.debug = true
-    obstacle.setCollider("circle", 20, 80);
+     obstacle.debug = false;
+     obstacle.setCollider("circle", 20, 80);
      }
 }
