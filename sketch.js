@@ -312,7 +312,6 @@ function spawnObstacles() {
      obstacle.scale = 0.2;
      obstacle.velocityX = obstacleSpeed;
      obstacleGroup.add(obstacle);
-     obstacle.debug = false;
      obstacle.setCollider("circle", 20, 80);
      }
 }
